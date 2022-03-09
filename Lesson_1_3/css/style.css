@@ -20,8 +20,6 @@ a {
 body {
     font-family: 'TT Lakes', sans-serif;
 	font-weight: 400;
-    /* width: 1120px;
-    max-width: 100%;  */
 }
 
 /* ------- header ------- */
@@ -130,6 +128,10 @@ body {
     margin-right: 36px;
 }
 
+.main__first-text-block {
+    margin-bottom: 10px;
+}
+
 .main__read-more {
     display: block;
     margin-bottom: 16px;
@@ -142,6 +144,10 @@ body {
     background-position: center left;
 	background-repeat: no-repeat;
 	background-size: contain;
+}
+
+.main__img {
+    width: 100%;
 }
 
 /* ------- media ------- */
@@ -178,10 +184,6 @@ body {
         margin-right: 16px;
         width: 200%;
     }  
-
-    .main__img {
-        width: 100%;
-    }
 }
 
 @media (min-width: 1120px) {

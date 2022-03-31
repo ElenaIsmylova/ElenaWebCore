@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Рекламный блок</title>
+</head>
+<body>
+    
+    <section class="advertisement">
+
+        <h2 class="advertisement__title">
+            Ремонт техники различных брендов
+        </h2>
+        
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <template id="swiper-template">
+                    <div class="swiper-slide">
+                        <li class="advertisement__item">
+                            <img src="#" alt="brend-logo" class="advertisement__brend-logo">
+                            <a href="#" class="advertisement__link"></a>
+                        </li>
+                    </div>
+                </template>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <ul class="advertisement__list">
+            <template id="li-template">
+                <li class="advertisement__item">
+                    <img src="#" alt="brend-logo" class="advertisement__brend-logo">
+                    <a href="#" class="advertisement__link"></a>
+                </li>
+            </template>
+
+            <template id="details-template">
+                <details class="details">
+                    <summary class="summary">
+                        
+                    </summary>
+                </details>
+            </template>
+        </ul>
+    
+    
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> 
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'TT Lakes', sans-serif;
+	font-weight: 400;
+}
+
+.advertisement {
+    max-width: 1120px;
+}
+
+.swiper {
+    width: 100%;
+    height: 130px;
+    background: #f8f8f8;
+}
+
+.swiper-slide {
+    padding-left: 15%;
+    padding-top: 10px;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    margin: 6px;
+    background: #a7a7a7;
+}
+
+.advertisement__title {
+    height: 56px;
+    margin: 0;
+    padding: 16px 32px;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    color: #7E7E82;
+    background: linear-gradient(-270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+}
+
+.advertisement__list {
+    margin: 0;
+    padding: 24px 32px;
+    list-style: none;
+    background: #f8f8f8;
+}
+
+.advertisement__item {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin-right: 32px;
+    margin-bottom: 20px;
+    width: 240px;
+    height: 72px;
+    padding: 0 16px;
+    background-color: #FFFFFF;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+}
+
+.advertisement__brend-logo {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.advertisement__link {
+    display: inline-block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 10px;
+    top: 16px;
+    background: url('../img/btn.svg')  center center / cover no-repeat;
+}
+
+.details {
+    position: relative;
+}
+
+.details > summary {
+    display: inline-block;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    z-index: 10;
+    margin-bottom: 10px;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 30px;
+    font-weight: 500;
+    list-style: none;
+    background: url('../img/arrow_down.svg') left center / contain no-repeat;
+    cursor: pointer;
+}
+
+.details > summary::after {
+    content: "Показать всё";
+}
+
+details[open] > summary {
+    background: url('../img/arrow_up.svg') left center / contain no-repeat;
+    display: inline-block;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    z-index: 10;
+}
+
+.details[open] > summary::after {
+    content: "Скрыть";
+}
+
+@media (min-width: 320px) {
+    .advertisement__list {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .swiper {
+        display: none;
+    }
+
+    .advertisement__list {
+        display: block;
+    }
+}

@@ -1,0 +1,120 @@
+.repair__swiper {
+    height: 230px;
+}
+
+.repair__list {
+    display: none;
+    position: relative;
+    padding-bottom: 15px;
+    padding-left: 30px;
+}
+
+.repair__item {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    width: 230px;
+    height: 160px;
+    padding-top: 16px;
+    padding-left: 16px;
+    background-color: #FFFFFF;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+}
+
+.repair__link {
+    display: inline-block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 16px;
+    top: 104px;
+    background: url('./../images/advertisement/btn.svg')  center center / cover no-repeat;
+}
+
+.repair__item-title {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+}
+
+.repair__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.repair__triger {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 40px;
+    z-index: 10;
+    margin-bottom: 5px;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 30px;
+    font-weight: 500;
+    list-style: none;
+    background: url('./../images/advertisement/arrow_down.svg') left center / contain no-repeat;
+    cursor: pointer;
+}
+
+.repair__triger::after {
+    content: "Показать всё";
+}
+
+.repair__input:checked ~ .repair__triger {
+    background: url('./../images/advertisement/arrow_up.svg') left center / contain no-repeat;
+}
+
+.repair__input:checked ~ .repair__triger::after {
+    content: "Скрыть";
+}
+
+
+@media (min-width: 661px) {
+    .repair__list {
+        display: block;
+    }
+}
+
+@media (max-width: 860px) {
+    .repair__item:nth-child(n+5) {
+        display: none;
+    }
+
+    .repair__input:checked ~ .repair__item:nth-child(n+5) {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 1105px) {
+    .repair__item:nth-child(n+6) {
+        display: none;
+    }
+
+    .repair__input:checked ~ .repair__item:nth-child(n+6) {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 7680px) {
+    .repair__item:nth-child(n+7) {
+        display: none;
+    }
+
+    .repair__input:checked ~ .repair__item:nth-child(n+7) {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 450px) {
+    .repair__item {
+        width: 180px;
+    }
+}

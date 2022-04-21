@@ -1,0 +1,24 @@
+.send-wrapper {
+    display: flex;
+    justify-content: end;
+}
+
+.send {
+    display: inline-block;
+    width: 119px;
+    height: 32px;
+    padding: 4px 25px 4px 20px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+    background-color: #FF3E79;
+    border-radius: 16px;
+    background-image: url('./../images/prices/dropdown.svg');
+    background-size: 7px 10px;
+    background-position: 100px center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}

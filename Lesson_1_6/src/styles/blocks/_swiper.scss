@@ -1,0 +1,22 @@
+.swiper {
+    width: 100%;
+    background: #f8f8f8;
+    padding-left: 15%;
+}
+
+.swiper-slide {
+    padding-top: 10px;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    margin: 6px;
+    background: #b5b6bc;
+}
+
+@media (min-width: 660px) {
+    .swiper {
+        display: none;
+    }
+}

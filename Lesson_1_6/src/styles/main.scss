@@ -1,0 +1,48 @@
+// Swiper
+@import url('https://unpkg.com/swiper@8/swiper-bundle.min.css');
+@import url('https://unpkg.com/swiper@8/swiper-bundle.min.js');
+
+// Base
+@import "./base/reset";
+@import "./base/base";
+
+// Blocks
+@import "./blocks/swiper";
+@import "./blocks/aside-menu";
+@import "./blocks/header";
+@import "./blocks/hamburger-menu";
+@import "./blocks/advertisement";
+@import "./blocks/button-send";
+@import "./blocks/callback";
+@import "./blocks/feedback";
+@import "./blocks/footer";
+@import "./blocks/hero";
+@import "./blocks/nav";
+@import "./blocks/prices";
+@import "./blocks/repair";
+
+
+// Fonts
+@font-face {
+    font-family: 'TT Lakes';
+    src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+        url('./../fonts/TTLakes-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: local('TT Lakes Medium'), local('TTLakes-Medium'),
+        url('./../fonts/TTLakes-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: local('TT Lakes Bold'), local('TTLakes-Bold'),
+        url('./../fonts/TTLakes-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}

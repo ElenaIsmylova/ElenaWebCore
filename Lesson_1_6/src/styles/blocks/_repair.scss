@@ -32,6 +32,11 @@
     right: 16px;
     top: 104px;
     background: url('./../images/advertisement/btn.svg')  center center / cover no-repeat;
+    transition: transform 0.3s linear;
+}
+
+.repair__link:hover {
+    transform: scale(1.2);
 }
 
 .repair__item-title {

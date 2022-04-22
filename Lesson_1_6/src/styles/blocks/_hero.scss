@@ -4,6 +4,63 @@
     padding: 20px 16px;
 }
 
+.limited {
+    max-height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+.limited.l-200 {
+    max-height: 150px;
+}
+
+.limited.l-300 {
+    max-height: 300px;
+}
+.limited .bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    opacity: 1;
+    transition: .3s;
+}
+.read-more-checker {
+    opacity: 0;
+    position: absolute;
+}
+.read-more-checker:checked ~ .limited {
+    max-height: none;
+}
+.read-more-checker:checked ~ .limited .bottom {
+    opacity: 0;
+    transition: .3s;
+}
+.read-more-checker ~ .read-more-button:before {
+    content: 'Читать далее';
+    padding-left: 32px;
+    background-image: url('./../images/hero/expand.svg');
+    background-position: center left;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.read-more-checker:checked ~ .read-more-button:before {
+    content: 'Свернуть';
+    padding-left: 32px;
+    background-image: url('./../images/hero/arrow_up.svg');
+    background-position: center left;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.read-more-button {
+    display: block;
+    margin-bottom: 16px;
+    height: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
 .hero__text {
     margin-bottom: 16px;
     font-size: 14px;
@@ -11,23 +68,9 @@
     margin-right: 36px;
 }
 
-.hero__first-text-block {
+.hero__text-block {
     width: 100%;
     margin-bottom: 10px;
-}
-
-.hero__read-more {
-    display: block;
-    margin-bottom: 16px;
-    padding-left: 32px;
-    height: 24px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    background-image: url('./../images/hero/expand.svg');
-    background-position: center left;
-	background-repeat: no-repeat;
-	background-size: contain;
 }
 
 .hero__img {

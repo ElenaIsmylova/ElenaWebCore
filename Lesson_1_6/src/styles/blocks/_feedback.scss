@@ -31,6 +31,10 @@
     position: absolute;
     left: -65px;
     top: 25px;
+    transition: transform 0.3s linear;
+}
+.feedback__close:hover {
+    transform: scale(1.2);
 }
 
 .feedback__title {

@@ -47,6 +47,11 @@
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
+    transition: transform 0.3s linear;
+}
+
+.advertisement__link:hover {
+    transform: scale(1.2);
 }
 
 .advertisement__input {

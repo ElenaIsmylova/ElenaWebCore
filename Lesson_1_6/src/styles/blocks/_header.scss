@@ -21,6 +21,11 @@
     width: 40px;
     height: 40px;
     margin-right: 16px;
+    transition: transform 0.3s linear;
+}
+
+.hamburger:hover {
+    transform: scale(1.2);
 }
 
 .logo {
@@ -41,10 +46,23 @@
 
 .header__application {
     padding-right: 16px;
+    transition: transform 0.3s linear;
+}
+
+.header__application:hover {
+    transform: scale(1.2);
 }
 
 .header__application-text {
     display: none;
+}
+
+.header__status {
+    transition: transform 0.3s linear;
+}
+
+.header__status:hover {
+    transform: scale(1.2);
 }
 
 .header__status-text {
@@ -87,6 +105,18 @@
         width: 40px;
         height: 40px;
         margin-right: 16px;
+    }
+
+    .header__phone,
+    .header__chat,
+    .header__profile {
+        transition: transform 0.3s linear;
+    }
+
+    .header__phone:hover,
+    .header__chat:hover,
+    .header__profile:hover {
+        transform: scale(1.2);
     }
 
     .header__profile-link {

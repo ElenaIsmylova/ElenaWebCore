@@ -90,6 +90,11 @@
     background-position: 100px center;
     background-repeat: no-repeat;
     cursor: pointer;
+    transition: transform 0.3s linear;
+}
+
+.prices__service-order:hover {
+    transform: scale(1.2);
 }
 
 .prices__comments {
@@ -112,7 +117,7 @@
         line-height: 22px;
         letter-spacing: -0.2px;
         color: #1B1C21;
-        // background-image: url('./../../images/prices/more.svg');
+        background-image: url('./../images/prices/more.svg');
         background-size: 24px 24px;
         background-position: 290px center;
         background-repeat: no-repeat;

@@ -15,17 +15,27 @@
     margin-bottom: 10px;
     font-size: 16px;
     line-height: 36px;
+    transition: transform 0.2s linear;
 }
 
-.nav__item:first-child {
+.nav__active {
     background-color: #fff;
     border: 2px solid #B8FFEC;
     border-radius: 6px;
 }
 
-@media (max-width: 1200px) {
+.nav__item:hover {
+    transform: scale(1.05);
+    color: #7e7e82;
+}
+
+@media (max-width: 992px) {
     .nav__list {
         flex-wrap: nowrap;
         overflow-x: auto;
+    }
+
+    ::-webkit-scrollbar {
+        height: 15px;
     }
 }

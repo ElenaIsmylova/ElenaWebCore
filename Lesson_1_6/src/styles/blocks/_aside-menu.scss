@@ -35,6 +35,11 @@
     width: 40px;
     height: 40px;
     margin-right: 25px;
+    transition: transform 0.3s linear;
+}
+
+.aside-menu__search:hover {
+    transform: scale(1.2);
 }
 
 .aside-menu__main {
@@ -45,7 +50,13 @@
 
 .aside-menu__item {
     height: 50px;
+    transition: transform 0.3s linear;
 }
+
+.aside-menu__item:hover {
+    transform: scale(1.05);
+}
+
 
 .aside-menu__link {
     transition: border-bottom 0.5s ease;

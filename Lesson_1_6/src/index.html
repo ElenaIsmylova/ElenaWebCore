@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <title>CPS</title>
 </head>
 <body>
     <div class="container">
@@ -316,11 +317,11 @@
                 
             </header>
 
-
             <main class="main">
+
                 <nav class="nav">
                     <ul class="nav__list">
-                        <li class="nav__item">
+                        <li class="nav__item nav__active">
                             <a href="#" class="nav__link">Ремонтируемые бренды</a>
                         </li>
                         <li class="nav__item">
@@ -344,12 +345,15 @@
                 <section class="hero">
 
                     <div class="hero__left-part">
-                        <div class="hero__text">
-                            <p class="hero__first-text-block">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                        <input type="checkbox" class="read-more-checker" id="read-more-checker" />
+                        <div class="hero__text limited l-200">
+                            <p class="hero__text-block">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
                             </p>
-                            <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>    
+                            <p class="hero__text-block">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+                            <p class="hero__text-block">Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Букв пустился продолжил ты грустный рукопись текст великий страна, парадигматическая, заманивший его языком города наш первую раз это родного пояс?</p>
+                        <div class="bottom"></div>
                         </div>
-                        <a href="#" class="hero__read-more">Читать далее</a>
+                        <label for="read-more-checker" class="read-more-button"></label>
                     </div>
 
                     <div class="hero__right-part">
@@ -756,5 +760,7 @@
             </footer>
         </div>
     </div>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </body>
 </html>
